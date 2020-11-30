@@ -1,25 +1,15 @@
-var links = $("li");
+var links = $("li.menu");
 console.log(links);
-var dropdown_menu = $(".navbar_center li > ul").siblings().get();
-console.log(dropdown_menu);
+var dropdownMenu = $(".navbar_center li > ul").siblings().get();
+console.log(dropdownMenu);
 
 links.mouseenter(function () { 
   $('ul', this).addClass("visible");
 });
 
-links.mouseleave(function () { 
+$(document).click(function () { 
   if ($("ul", this).hasClass("visible")){
     $('ul', this).removeClass("visible");
   }
 }); 
  
-
-/* $(document).ready(function () {       
-  $('#nav li').hover(function () {           
-    //mostra sottomenu          
-            
-  }, function () {           
-    //nascondi sottomenu            
-    $('ul', this).stop(true, true).slideUp(200);                
-  }   
-);  */
