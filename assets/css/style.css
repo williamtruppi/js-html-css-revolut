@@ -20,6 +20,11 @@
 
 /* navbar */
 
+nav{
+  align-items: center;
+  height: 80px;
+}
+
 nav img{
   height: 50px;
 }
@@ -32,6 +37,7 @@ nav a{
 
 nav ul li{
   list-style: none;
+  height: 100%;
 }
 
 /* navbar left */
@@ -49,8 +55,9 @@ nav ul li{
 
 .navbar_center{
   width: 50%;
+  height: 100%;
   justify-content: flex-end;
-  align-self: center;
+  align-items: center;
 }
 
 .navbar_center ul li{
@@ -68,7 +75,11 @@ nav ul li{
   z-index: 1;
 }
 
-.abbonamenti:hover .list_abbonamenti {
+.visible{
+  display: block;
+}
+
+/* .abbonamenti:hover .list_abbonamenti {
   display: block;
 }
 
@@ -79,6 +90,7 @@ nav ul li{
 .aiuto:hover .list_aiuto {
   display: block;
 }
+ */
 
 /* navbar right */
 
